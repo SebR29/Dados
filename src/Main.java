@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -30,6 +31,49 @@ public class Main {
       }
 
       //Codigo de juego de adivinar un numero//
+
+        Scanner adinanza =new Scanner(System.in);
+        int numero;
+        numero = (int)(Math.random() * 50 )+1;
+        numero = aleatorio.nextInt(50)+1;
+        int numeroinvisble = aleatorio.nextInt(50)+1;
+        int intento;
+        for (int intentos =1; intentos <= 3; intentos++){
+
+            System.out.println("Adivina el numero del 1 al 50");
+            intento = adinanza.nextInt();
+            if(intento == numeroinvisble){
+                System.out.println("Adininaste! te ganaste un dulce yipiiiii");
+                break;
+            }
+            if (intentos==3){
+                System.out.println("Fallaste era el numero " + numeroinvisble + " suerte a la proxima chamo");
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
